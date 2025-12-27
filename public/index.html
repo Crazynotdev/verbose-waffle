@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CRAZY MINI - Pair WhatsApp</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>CRAZY MINI</h1>
+
+    <section id="auth">
+      <h2>Register / Login</h2>
+      <div class="row">
+        <div>
+          <h3>Register</h3>
+          <input id="reg-email" placeholder="email" />
+          <input id="reg-pass" placeholder="password" type="password" />
+          <button id="btn-register">Register</button>
+        </div>
+        <div>
+          <h3>Login</h3>
+          <input id="login-email" placeholder="email" />
+          <input id="login-pass" placeholder="password" type="password" />
+          <button id="btn-login">Login</button>
+        </div>
+      </div>
+      <div id="user-info" style="display:none;">
+        <p>Logged in as <span id="user-email"></span> — Coins: <span id="user-coins"></span></p>
+        <button id="btn-logout">Logout</button>
+      </div>
+    </section>
+
+    <section id="pair">
+      <h2>Pair WhatsApp</h2>
+      <input id="phoneNumber" placeholder="2417XXXXXXXX (digits only)" />
+      <button id="btn-pair">Generate Pair Code</button>
+      <div id="pairingStatus"></div>
+      <div id="pairingCode" class="pairingCode"></div>
+    </section>
+
+    <section id="sessions">
+      <h2>Your Sessions</h2>
+      <ul id="sessionsList"></ul>
+    </section>
+  </main>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
