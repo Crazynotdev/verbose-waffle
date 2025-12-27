@@ -1,0 +1,22 @@
+:root{
+  --bg:#0f1724;
+  --panel:#0b1220;
+  --accent:#6ee7b7;
+  --muted:#94a3b8;
+  --card:#0e1722;
+}
+*{box-sizing:border-box}
+body{
+  font-family:Inter,system-ui,Arial,sans-serif;
+  margin:0;background:linear-gradient(180deg,#071022 0%, #071a2b 100%);color:#e6eef6;
+  min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;
+}
+.container{width:100%;max-width:960px;background:var(--panel);border-radius:12px;padding:24px;box-shadow:0 8px 30px rgba(0,0,0,0.6);}
+h1{margin:0 0 12px}
+.row{display:flex;gap:12px}
+input{display:block;padding:10px;border-radius:8px;border:1px solid #123;background:#071224;color:#e6eef6;width:100%}
+button{padding:10px 14px;border-radius:8px;background:var(--accent);border:none;color:#072;cursor:pointer}
+.pairingCode{margin-top:12px;padding:18px;border-radius:8px;background:linear-gradient(90deg,#04121a, #072035);font-size:22px;letter-spacing:4px}
+#pairingStatus{margin-top:10px;color:var(--muted)}
+#sessionsList{list-style:none;padding:0}
+#sessionsList li{padding:10px;border-radius:8px;background:#061124;margin-top:8px;display:flex;justify-content:space-between;align-items:center}
