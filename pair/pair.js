@@ -1,7 +1,7 @@
 import path from "path";
 import fs from "fs";
 import { fileURLToPath } from "url";
-import { useMultiFileAuthState, makeWASocket, /*requestPairingCode*/, DisconnectReason } from "@whiskeysockets/baileys";
+import { useMultiFileAuthState, makeWASocket, /*requestPairingCode*/ DisconnectReason } from "@whiskeysockets/baileys";
 import { format } from "date-fns";
 
 /**
